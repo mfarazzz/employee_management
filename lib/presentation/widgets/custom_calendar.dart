@@ -11,12 +11,11 @@ class CustomCalendarDialog extends StatefulWidget {
   final TextEditingController toDateController;
 
   const CustomCalendarDialog(
-      {Key? key,
+      {super.key,
       required this.onDateSelected,
       required this.from,
       required this.fromDateController,
-      required this.toDateController})
-      : super(key: key);
+      required this.toDateController});
 
   @override
   _CustomCalendarDialogState createState() => _CustomCalendarDialogState();

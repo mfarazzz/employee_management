@@ -15,7 +15,7 @@ void main() {
 class MyApp extends StatelessWidget {
   final EmployeeRepository repository;
 
-  const MyApp({Key? key, required this.repository}) : super(key: key);
+  const MyApp({super.key, required this.repository});
 
   @override
   Widget build(BuildContext context) {

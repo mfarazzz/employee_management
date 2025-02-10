@@ -11,7 +11,7 @@ import '../../core/utils/date_formatter.dart';
 class AddEditEmployeeScreen extends StatefulWidget {
   final Employee? employee;
 
-  const AddEditEmployeeScreen({Key? key, this.employee}) : super(key: key);
+  const AddEditEmployeeScreen({super.key, this.employee});
 
   @override
   _AddEditEmployeeScreenState createState() => _AddEditEmployeeScreenState();

@@ -10,7 +10,7 @@ import '../../data/models/employee_model.dart';
 import 'add_edit_employee_screen.dart';
 
 class EmployeeListScreen extends StatelessWidget {
-  const EmployeeListScreen({Key? key}) : super(key: key);
+  const EmployeeListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
