@@ -115,21 +115,23 @@ class EmployeeListScreen extends StatelessWidget {
               ],
             );
           } else {
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset("assets/icons/no-data.svg", height: 200),
-                const SizedBox(height: 12),
-                const Text(
-                  "No employee records found",
-                  style: TextStyle(
-                    fontFamily: 'Roboto',
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Color(0XFF949C9E),
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset("assets/icons/no-data.svg", height: 200),
+                  const SizedBox(height: 12),
+                  const Text(
+                    "No employee records found",
+                    style: TextStyle(
+                      fontFamily: 'Roboto',
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0XFF949C9E),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             );
           }
         },

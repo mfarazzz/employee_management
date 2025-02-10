@@ -7,11 +7,11 @@ class CustomSlidable extends StatefulWidget {
   final double slideAmount;
 
   const CustomSlidable({
-    super.key,
+    Key? key,
     required this.child,
     required this.onDelete,
     this.slideAmount = 0.2,
-  });
+  }) : super(key: key);
 
   @override
   _CustomSlidableState createState() => _CustomSlidableState();
